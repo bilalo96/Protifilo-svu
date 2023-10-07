@@ -205,15 +205,14 @@ header{
     text-decoration: none;
 }
 
-.logo{
+#logo.navbar-brand {
     text-decoration: none;
     color: #15358b;
     font-weight: 700;
     font-size: 1.8em;
-    text-decoration: none;
 }
 
-.navigation a{
+#navigation.navbar-brand {
     color: #15358b;
     text-decoration: none;
     font-size: 1.1em;
@@ -221,7 +220,7 @@ header{
     padding-left: 30px;
 }
 
-.navigation a:hover{
+#navigation.navbar-brand:hover {
     color: #3a6cf4;
 }
 

@@ -4,86 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
     <title>About Us</title>
-    <!-- Include Bootstrap CSS link here -->
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">Cooder Team</a>
-        <nav class="navigation">
-            <a href="index.html">Homepage</a>
-            <a href="projects.html">Projects</a>
-            <a href="About me.html">About Us</a>
-            <a href="Contact.html">Contact</a>
-
+        <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" id="logo" class="navbar-brand">Cooder Team</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About me.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section class="main">
-
-        <div>
-            <h2>Hello, We are Cooder Team<br><span>Web Developeres</span></h2>
-            <h3>Full stack web developers</h3>
-
-        </div>
-
-        <img src="images/img.png" class="main-img" />
-
-
-    </section>
-    <!-- About Us Section -->
-    <section class="about-us" >
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 about-person">
-                    <div class="hovered">
-                        <img class="animated-photo" src="images/mazen.jpg" alt="Person 1">
-                        <button class="toggle-btn btn btn-primary">Show Additional Info </button>
-                        <div class="additional-info" style="display: none;">
-                            <p> Digital Skills
-                                Microsoft Office Microsoft Excel Microsoft Word Zoom Google Drive Social Media Facebook
-                                work under pressure
-                                Intermediate
-                                Ability to communication
-                                Intermediat.</p>
-                        </div>
-                        <!-- Add a hidden div for additional information -->
-                        <h3>Mazen Alrusli</h3>
-                        <p>Bachelor's degree in information technology</p>
-                        <p>Two years of experience in website front-end</p>
-                        <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-                    </div>
+                <div class="col-lg-6">
+                    <h2>Hello, We are Cooder Team<br><span>Web Developers</span></h2>
+                    <h3>Full stack web developers</h3>
                 </div>
-
-                <div class="col-md-3 col-sm-6 about-person">
-                    <div class="hovered">
-                        <button class="animate-btn btn btn-primary">Animate Image</button>
-                        <img class="animated-img" src="images/yaser.jpg" alt="Person 2">
-                        <button class="toggle-btn btn btn-primary">Show Additional Info </button>
-                        <div class="additional-info" style="display: none;">
-                            <p> Digital Skills
-                                Microsoft Office Microsoft Excel Microsoft Word Zoom Google Drive Social Media Facebook
-                                work under pressure
-                                Intermediate
-                                Ability to communication
-                                Intermediat.</p>
-                        </div>
-                        <!-- Add a hidden div for additional information -->
-                        <h3>Yaser Awad</h3>
-                        <p>Web Developer</p>
-                        <p>Bachelor's degree in Mechatronics Engineering</p>
-                        <p>Two years of experience in website front-end</p>
-                        <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-                    </div>
+                <div class="col-lg-6">
+                    <img src="images/img.png" class="img-fluid" alt="Main Image">
                 </div>
+            </div>
+        </div>
+    </section>
 
-
-                <div class="col-md-3 col-sm-6 about-person">
-                    <div class="hovered">
-                        <img class="animated-image" src="images/bilal.jpg" alt="Person 3">
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!-- Add Bootstrap classes to your about-person div -->
+                    <div class="about-person text-center">
+                        <img class="animated-photo img-fluid" src="images/mazen.jpg" alt="Person 1">
                         <button class="toggle-btn btn btn-primary">Show Additional Info</button>
                         <div class="additional-info" style="display: none;">
                             <p> Digital Skills
@@ -91,50 +64,86 @@
                                 work under pressure
                                 Intermediate
                                 Ability to communication
-                                Intermediat </p>
+                                Intermediat.</p>
                         </div>
-                        <h3>Mohammad Bilal Qwider</h3>
-                        <p>Web Developer</p>
-                        <p>Bachelor's degree in Mechatronics Engineering</p>
+                        <h3>Mazen Alrusli</h3>
+                        <p>Bachelor's degree in information technology</p>
                         <p>Two years of experience in website front-end</p>
                         <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6 about-person">
-                    <div class="hovered">
-
-                        <button class="animate-btn btn btn-primary">Animate Image</button>
-                        <img class="animated-img" src="images/mo.jpg" alt="Person 4">
-                        <button class="toggle-btn btn btn-primary">Show Additional Info </button>
+                <div class="col-md-3 col-sm-6">
+                    <!-- Add Bootstrap classes to your about-person div -->
+                    <div class="about-person text-center">
+                        <img class="animated-photo img-fluid" src="images/yaser.jpg" alt="Person 1">
+                        <button class="toggle-btn btn btn-primary">Show Additional Info</button>
                         <div class="additional-info" style="display: none;">
                             <p> Digital Skills
                                 Microsoft Office Microsoft Excel Microsoft Word Zoom Google Drive Social Media Facebook
                                 work under pressure
                                 Intermediate
                                 Ability to communication
-                                Intermediate</p>
+                                Intermediat.</p>
                         </div>
-                        <h3>Mawadah Halabia</h3>
-                        <p>Web Developer</p>
-                        <p>Bachelor's degree in Mechatronics Engineering</p>
+                        <h3>Mazen Alrusli</h3>
+                        <p>Bachelor's degree in information technology</p>
                         <p>Two years of experience in website front-end</p>
                         <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-                     </div>
+                    </div>
                 </div>
+                <div class="col-md-3 col-sm-6">
+                    <!-- Add Bootstrap classes to your about-person div -->
+                    <div class="about-person text-center">
+                        <img class="animated-photo img-fluid" src="images/bilal.jpg" alt="Person 1">
+                        <button class="toggle-btn btn btn-primary">Show Additional Info</button>
+                        <div class="additional-info" style="display: none;">
+                            <p> Digital Skills
+                                Microsoft Office Microsoft Excel Microsoft Word Zoom Google Drive Social Media Facebook
+                                work under pressure
+                                Intermediate
+                                Ability to communication
+                                Intermediat.</p>
+                        </div>
+                        <h3>Mazen Alrusli</h3>
+                        <p>Bachelor's degree in information technology</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>Html, CSS, Java Script, Bootstrap, PHP</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!-- Add Bootstrap classes to your about-person div -->
+                    <div class="about-person text-center">
+                        <img class="animated-photo img-fluid" src="images/mo.jpg" alt="Person 1">
+                        <button class="toggle-btn btn btn-primary">Show Additional Info</button>
+                        <div class="additional-info" style="display: none;">
+                            <p> Digital Skills
+                                Microsoft Office Microsoft Excel Microsoft Word Zoom Google Drive Social Media Facebook
+                                work under pressure
+                                Intermediate
+                                Ability to communication
+                                Intermediat.</p>
+                        </div>
+                        <h3>Mazen Alrusli</h3>
+                        <p>Bachelor's degree in information technology</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>Html, CSS, Java Script, Bootstrap, PHP</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
-            <div class="row mb-5" >
-                <div class="col-md">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
                     <div class="ftco-footer-widget mb-4">
                         <h2>Cooder_Team</h2>
-                        <p>Design webApplications , Design MobileApplication , Design Macine Learning Algoritm ,
-                            DataAnalysis .</p>
+                        <p>Design webApplications, Design MobileApplication, Design Machine Learning Algorithm, Data Analysis.</p>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md-2 col-sm-6">
                     <div>
                         <h2>Information</h2>
                         <ul>
@@ -147,7 +156,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md-2 col-sm-6">
                     <div>
                         <h2>Customer Support</h2>
                         <ul>
@@ -159,35 +168,32 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md-4 col-sm-6">
                     <div>
-                        <h2>Have a Questions?</h2>
-                        <div>
-                            <ul>
-                                <li><span class="text">Damascus/Syria</span></li>
-                                <li><span class="text">0960060827</span></a></li>
-                                <li><a href="#"><span class="text">info@Cooder_Team.com</span></a></li>
-                            </ul>
-                        </div>
+                        <h2>Have a Question?</h2>
+                        <ul>
+                            <li><span class="text">Damascus/Syria</span></li>
+                            <li><span class="text">0960060827</span></li>
+                            <li><a href="mailto:info@Cooder_Team.com"><span class="text">info@Cooder_Team.com</span></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-
-                    Copyright &copy;<script>
-                        document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made by <a href="#" target="_blank">Cooder Team</a>
-                    </p>
+                    <p>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="#" target="_blank">Cooder Team</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="JS/hover.js"></script>
     <script src="JS/nav.js"></script>
+    <script src="JS/script.js"></script>
+
     <script src="JS/toggle.js"></script>
 
 
