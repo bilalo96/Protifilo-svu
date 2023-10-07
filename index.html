@@ -1,92 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="CSS/Style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cooder Team</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>About Us</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html" id="logo">Cooder Team</a>
-        <nav class="navigation">
-            <a href="index.html">Homepage</a>
-            <a href="projects.html">Projects</a>
-            <a href="About me.html">About Us</a>
-            <a href="Contact.html">Contact</a>
-
+        <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" id="logo" class="navbar-brand">Cooder Team</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About me.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <section class="main">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <h2>Hello, We are Cooder Team<br><span>Web Developers</span></h2>
+                  <h3>Full stack web developers</h3>
+              </div>
+              <div class="col-lg-6">
+                  <img src="images/img.png" class="img-fluid" alt="Main Image">
+              </div>
+          </div>
+      </div>
+  </section>
 
-         <div>
-           <h2>Hello, We are Cooder Team<br><span>Web Developeres</span></h2>
-            <h3>Full stack web developers</h3 >
-                <a href="#team" class="main-btn">Work Team</a>
-         </div>
-
-         <img src="images/img.png" class="main-img"/>
-
-
-    </section>
-
-
-    <section class="cards" id="team">
-        <h2 class="title">Cooder Work Team</h2>
-        <div class="content">
-
-            <div class="card">
-                <div class="info">
-                    <img src="images/mazen.jpg" width="80px" height="85px">
-                    <h3>Mazen Alrusli</h3>
-                    <p>web developer </p>
-                    <p>Bachelor's degree in information technology</p>
-                    <p>Two years of experience in website front-end </p>
-                    <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-
+<section class="cards" id="team">
+    <div class="container">
+        <h2 class="title text-center">Cooder Work Team</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <div class="card info text-center">
+                        <img src="images/mazen.jpg" alt="Mazen Alrusli" class="img-fluid">
+                        <h3>Mazen Alrusli</h3>
+                        <p>Web Developer</p>
+                        <p>Bachelor's degree in Information Technology</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>HTML, CSS, JavaScript, Bootstrap, PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <div class="card info text-center">
+                        <img src="images/yaser.jpg" alt="Yaser Awad" class="img-fluid">
+                        <h3>Yaser Awad</h3>
+                        <p>Web Developer</p>
+                        <p>Bachelor's degree in Mechatronics Engineer</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>HTML, CSS, JavaScript, Bootstrap, PHP</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="info">
-                    <img src="images/yaser.jpg" width="80px" height="90px">
-                    <h3>Yaser Awad</h3>
-                    <p>web developer </p>
-                    <p>Bachelor's degree in Mechatronics Engineer</p>
-                    <p>Two years of experience in website front-end </p>
-                    <p>Html, CSS, Java Script, Bootstrap, PHP</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <div class="card info text-center">
+                        <img src="images/bilal.jpg" alt="Bilal Qwider" class="img-fluid">
+                        <h3>Bilal Qwider</h3>
+                        <p>Web Developer</p>
+                        <p>Bachelor's degree in AI Engineer</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>HTML, CSS, JavaScript, Bootstrap, PHP</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="info">
-                    <img src="images/bilal.jpg" width="80px" height="90px">
-                    <h3>Bilal Qwider</h3>
-                    <p>web developer </p>
-                    <p>Bachelor's degree in AI Engineer </p>
-                    <p>Two years of experience in website front-end </p>
-                    <p>Html, CSS, Java Script, Bootstrap, PHP</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-4">
+                    <div class="card info text-center">
+                        <img src="images/mo.jpg" alt="Mawadah Halabia" class="img-fluid">
+                        <h3>Mawadah Halabia</h3>
+                        <p>Web Developer</p>
+                        <p>Bachelor's degree in Information Technology</p>
+                        <p>Two years of experience in website front-end</p>
+                        <p>HTML, CSS, JavaScript, Bootstrap, PHP</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="info">
-                    <img src="images/pro.png" width="80px" height="90px">
-                    <h3>Mawadah Halabia</h3>
-                    <p>web developer </p>
-                    <p>Bachelor's degree in information technology</p>
-                    <p>Two years of experience in website front-end </p>
-                    <p>Html, CSS, Java Script, Bootstrap, PHP</p>
-                </div>
-            </div>
-
         </div>
+    </div>
+</section>
 
-
-    </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">

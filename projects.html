@@ -1,198 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/Style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Projects</title>
+  <title>About Us</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="logo">Cooder Team</a>
-        <nav class="navigation">
-            <a href="index.html">Homepage</a>
-            <a href="projects.html">Projects</a>
-            <a href="About me.html">About Us</a>
-            <a href="Contact.html">Contact</a>
+  <header>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html" id="logo" class="navbar-brand">Cooder Team</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About me.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
-
-
-       <section class="slide-show">
-        <!-- image slider start-->
-
-        <div class="slider">
-
-            <div class="slides">
-
-                <!-- radio button start-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- radio button start-->
-
-                <!-- slide images start-->
-                <div class="slide first">
-                    <img src="images/1.png">
-                </div>
-
-                <div class="slide">
-                    <img src="images/2.jpg">
-                </div>
-
-                <div class="slide">
-                    <img src="images/3.png">
-                </div>
-
-                <div class="slide">
-                    <img src="images/4.jpg">
-                </div>
-                <!-- slide images end-->
-
-                <!-- automatic navigation start-->
-                <div class="navication-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!-- automatic navigation end-->
-
+  <section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Hello, We are Cooder Team<br><span>Web Developers</span></h2>
+                <h3>Full stack web developers</h3>
             </div>
-            <!--manual navigat start-->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+            <div class="col-lg-6">
+                <img src="images/img.png" class="img-fluid" alt="Main Image">
             </div>
-            <!--manual navigat end-->
-
         </div>
-        <!-- image slider end-->
-    </section>
-
-    <h2 class="title_pro">Our Projects</h2>
-
-    <section class="projects" id="projects">
-        <!--<h2 class="title_pro">Our Projects</h2> -->
+    </div>
+</section>
 
 
-        <div class="content-pro">
-            <div class="card-pro">
-                <div class="pro-img">
-                    <img src="images/1.png"/>
-                </div>
-                <div class="pro-info">
-                    <p class="pro-cat">Web Design & Develpment</p>
-                    <strong class="pro-name">
-                        <span>W3School</span>
-                        <a href="https://www.w3schools.com/" class="more-details">More Details</a>
 
-                    </strong>
-                </div>
-            </div>
+  <section class="slide-show">
+    <!-- image slider start-->
 
-            <div class="card-pro">
-                <div class="pro-img">
-                    <img src="images/4.jpg"/>
-                </div>
-                <div class="pro-info">
-                    <p class="pro-cat">Desktop Application Development</p>
-                    <strong class="pro-name">
-                        <span>Bank App</span>
-                        <a href="https://www.w3schools.com/" class="more-details">More Details</a>
+    <div class="slider">
 
-                    </strong>
-                </div>
-            </div>
+      <div class="slides">
 
-            <div class="card-pro">
-                <div class="pro-img">
-                    <img src="images/2.jpg"/>
-                </div>
-                <div class="pro-info">
-                    <p class="pro-cat">Mobile Application Development</p>
-                    <strong class="pro-name">
-                        <span>E-Shop App</span>
-                        <a href="https://www.w3schools.com/" class="more-details">More Details</a>
+        <!-- radio button start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button start-->
 
-                    </strong>
-                </div>
-            </div>
-
-
+        <!-- slide images start-->
+        <div class="slide first">
+          <img src="images/1.png">
         </div>
 
-    </section>
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h2>Cooder_Team</h2>
-                <p>Design webApplications , Design MobileApplication , Design Macine Learning Algoritm , DataAnalysis .</p>
-              </div>
-            </div>
-            <div class="col-md">
-              <div>
-                <h2>Information</h2>
-                <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Terms and Conditions</a></li>
-                  <li><a href="#">Become a partner</a></li>
-                  <li><a href="#">Best Price Guarantee</a></li>
-                  <li><a href="#">Privacy and Policy</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-               <div>
-                <h2 >Customer Support</h2>
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Payment Option</a></li>
-                  <li><a href="#">Booking Tips</a></li>
-                  <li><a href="#">How it works</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-              <div>
-                  <h2>Have a Questions?</h2>
-                  <div>
-                    <ul>
-                      <li><span class="text">Damascus/Syria</span></li>
-                      <li><span class="text">0960060827</span></a></li>
-                      <li><a href="#"><span class="text">info@Cooder_Team.com</span></a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
+        <div class="slide">
+          <img src="images/2.jpg">
+        </div>
 
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made  by <a href="#" target="_blank">Cooder Team</a>
-            </p>
+        <div class="slide">
+          <img src="images/3.png">
+        </div>
+
+        <div class="slide">
+          <img src="images/4.jpg">
+        </div>
+        <!-- slide images end-->
+
+        <!-- automatic navigation start-->
+        <div class="navication-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!-- automatic navigation end-->
+
+      </div>
+      <!--manual navigat start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigat end-->
+
+    </div>
+    <!-- image slider end-->
+  </section>
+
+  <h2 class="title_pro">Our Projects</h2>
+
+  <section class="projects" id="projects">
+    <!--<h2 class="title_pro">Our Projects</h2> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-pro">
+            <div class="pro-img">
+              <img src="images/3.png" />
             </div>
+            <div class="pro-info">
+              <p class="pro-cat">Web Design & Develpment</p>
+              <strong class="pro-name">
+                <span>W3School</span>
+                <a href="https://www.w3schools.com/" class="more-details">More Details</a>
+
+              </strong>
+            </div>
+
           </div>
         </div>
-      </footer>
+        <div class="col-md-4">
+          <div class="card-pro">
+            <div class="pro-img">
+              <img src="images/4.jpg" />
+            </div>
+            <div class="pro-info">
+              <p class="pro-cat">Web Design & Develpment</p>
+              <strong class="pro-name">
+                <span>W3School</span>
+                <a href="https://www.w3schools.com/" class="more-details">More Details</a>
 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="JS/hover.js"></script>
-      <script src="JS/nav.js"></script>
-      <script src="JS/script.js"></script>
+              </strong>
+            </div>
 
-      <script src="JS/toggle.js"></script>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-pro">
+            <div class="pro-img">
+              <img src="images/2.jpg" />
+            </div>
+            <div class="pro-info">
+              <p class="pro-cat">Web Design & Develpment</p>
+              <strong class="pro-name">
+                <span>W3School</span>
+                <a href="https://www.w3schools.com/" class="more-details">More Details</a>
+
+              </strong>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-pro">
+            <div class="pro-img">
+              <img src="images/1.png" />
+            </div>
+            <div class="pro-info">
+              <p class="pro-cat">Web Design & Develpment</p>
+              <strong class="pro-name">
+                <span>W3School</span>
+                <a href="https://www.w3schools.com/" class="more-details">More Details</a>
+
+              </strong>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+  </section>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2>Cooder_Team</h2>
+            <p>Design webApplications , Design MobileApplication , Design Macine Learning Algoritm , DataAnalysis .</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div>
+            <h2>Information</h2>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Become a partner</a></li>
+              <li><a href="#">Best Price Guarantee</a></li>
+              <li><a href="#">Privacy and Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div>
+            <h2>Customer Support</h2>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Payment Option</a></li>
+              <li><a href="#">Booking Tips</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div>
+            <h2>Have a Questions?</h2>
+            <div>
+              <ul>
+                <li><span class="text">Damascus/Syria</span></li>
+                <li><span class="text">0960060827</span></a></li>
+                <li><a href="#"><span class="text">info@Cooder_Team.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          Copyright &copy;<script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved | This template is made by <a href="#" target="_blank">Cooder Team</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="JS/hover.js"></script>
+  <script src="JS/nav.js"></script>
+  <script src="JS/script.js"></script>
+
+  <script src="JS/toggle.js"></script>
+
 </body>
+
 </html>
