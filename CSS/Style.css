@@ -33,27 +33,26 @@
 }
 
 
+/* Base styles for the footer */
 .ftco-footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
+    text-align: center; /* Center align text in the footer on small screens */
 }
 
- footer headings
 .ftco-footer h2 {
     color: #fff;
 }
 
-
 .ftco-footer a {
     color: #fff;
-    text-decoration: none; }
-
+    text-decoration: none;
+}
 
 .ftco-footer a:hover {
     text-decoration: underline;
 }
-
 
 .ftco-footer ul {
     list-style-type: none;
@@ -71,8 +70,28 @@
 
 .ftco-footer p {
     margin-top: 20px;
-
 }
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .ftco-footer {
+        padding: 30px 0; /* Reduce padding on small screens */
+    }
+    .ftco-footer h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Add specific styles for medium-sized screens if needed */
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media (min-width: 992px) {
+    /* Add specific styles for large screens if needed */
+}
+
 
 
 
@@ -233,46 +252,48 @@ section{
     padding: 100px 200px;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: #f5f0f0;
-
-        }
-
-.main-img{
-    width: 550px;
-    height: 435px;
-    margin-left: 90px;
-    padding-left: 90px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.main h2{
+.main-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.main h2 {
     color: #3a6cf4;
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 20px;
+    text-align: center; /* Center align text on small screens */
 }
 
-.main h2 span{
+.main h2 span {
     display: inline-block;
     margin-top: 12px;
     color: #15358b;
-    font-size: 3.2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
-.main h3{
+.main h3 {
     color: #3a6cf4;
-    font-size: 1.9em;
+    font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 45px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align text on small screens */
 }
 
-.main-btn{
+.main-btn {
     color: #ffffff;
     background-color: #15358b;
     text-decoration: none;
@@ -282,15 +303,35 @@ section{
     padding: 0.7em 1.2em;
     letter-spacing: 1px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 20px auto; /* Center the button */
     transition: 0.7s ease;
-
+    display: block; /* Make the button a block element on small screens */
 }
 
-.main-btn:hover{
+.main-btn:hover {
     background-color: #3a6cf4;
     transform: scale(1.1);
 }
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .main h2 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    .main h2 span {
+        font-size: 2.2em;
+    }
+    .main h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .main-btn {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+}
+
 
 .title{
     display: flex;
@@ -332,49 +373,24 @@ section{
     font-weight: 700;
     margin: 10px;
 }
-
-
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 10px;
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .card {
+        padding: 30px 0; /* Reduce padding on small screens */
+    }
+    .content h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Add specific styles for medium-sized screens if needed */
 }
 
-.card{
-    background-color: #f0f0f0;
-    width: 25em;
-    box-shadow: 0 5px 25px #767779;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    transition: 0.7s ease;
-
-}
-
-.card:hover{
-    transform: scale(1.1);
-}
-
-.info{
-    text-align: center;
-}
-
-.info h3{
-    color: #3a6cf4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
+/* Media query for large screens (e.g., desktops) */
+@media (min-width: 992px) {
+    /* Add specific styles for large screens if needed */
 }
 
 .footer{
@@ -399,38 +415,48 @@ section{
 .slide-show {
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f5f0f0;
+    overflow: hidden; /* Prevent horizontal scroll on small screens */
 }
-.slider{
-    width: 800px;
-    height: 500px;
+
+.slider {
+    width: 100%; /* Adjust the width to 100% to make it responsive */
+    max-width: 800px; /* Limit the maximum width */
+    height: auto; /* Adjust height automatically */
     border-radius: 10px;
     overflow: hidden;
 }
 
-.slides{
-    width: 500%;
-    height: 500px;
+.slides {
+    width: 400%; /* Adjust to 400% for four slides */
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
-    width: 20%;
+.slide {
+    width: 25%; /* Adjust to 25% for four slides */
     transition: 2s;
 }
 
-.slide img{
-   width: 800px;
-   height: 500px;
+.slide img {
+    width: 100%; /* Adjust image width to 100% to make it responsive */
+    height: auto; /* Adjust height automatically */
+}
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .slider {
+        max-width: 100%; /* Adjust max-width for small screens */
+    }
 
+    .slide {
+        width: 100%; /* Adjust slide width for one slide at a time on small screens */
+    }
 }
 
 .navigation-manual{
@@ -582,6 +608,15 @@ transition: 1s;
 
 .more-details:hover{
     color: #3a6cf4;
+}
+@media (max-width: 767px) {
+    .col-md-6.col-lg-4 {
+        flex: 0 0 100%; /* Full width for one card per row on small screens */
+    }
+
+    .card-pro {
+        max-width: none; /* Remove the max-width constraint */
+    }
 }
 
 
