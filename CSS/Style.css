@@ -1,9 +1,75 @@
 /* home page CSS start */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Base styles for both mobile and PC screens */
+/* Base styles for both mobile and PC screens */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #15358b;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    .title {
+        font-size: 1.8em; /* Decrease font size for mobile screens */
+        margin-bottom: 20px; /* Adjust margin for mobile screens */
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically on mobile screens */
+    }
+
+    /* Additional styles for .cards on mobile screens */
+    .cards {
+        padding: 10px; /* Add padding for mobile screens */
+    }
+}
+
+/* Media query for larger screens (e.g., PCs) */
+@media (min-width: 768px) {
+    /* Additional styles for .cards on larger screens (PCs) */
+    .cards {
+        margin: 20px; /* Add margin for larger screens (PCs) */
+    }
+}
+
+
+.card {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
 .custom-card {
-    margin-bottom: 20px; /* Adjust the margin size as needed */
-    padding: 20px; /* Optional: Add padding to cards for additional spacing */
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .animated-image:hover{
@@ -33,12 +99,11 @@
 }
 
 
-/* Base styles for the footer */
 .ftco-footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
-    text-align: center; /* Center align text in the footer on small screens */
+    text-align: center;
 }
 
 .ftco-footer h2 {
@@ -72,24 +137,19 @@
     margin-top: 20px;
 }
 
-/* Media query for small screens (e.g., mobile devices) */
 @media (max-width: 767px) {
     .ftco-footer {
-        padding: 30px 0; /* Reduce padding on small screens */
+        padding: 30px 0;
     }
     .ftco-footer h2 {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem;
     }
 }
 
-/* Media query for medium screens (e.g., tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Add specific styles for medium-sized screens if needed */
 }
 
-/* Media query for large screens (e.g., desktops) */
 @media (min-width: 992px) {
-    /* Add specific styles for large screens if needed */
 }
 
 
@@ -140,7 +200,6 @@ button[type="submit"] {
     animation: rotate 1s ease-in-out;
 }
 
-/* Define the keyframes for the animation */
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -273,7 +332,7 @@ section{
     font-size: 2em;
     font-weight: 500;
     margin-top: 20px;
-    text-align: center; /* Center align text on small screens */
+    text-align: center;
 }
 
 .main h2 span {
@@ -290,7 +349,7 @@ section{
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    text-align: center; /* Center align text on small screens */
+    text-align: center;
 }
 
 .main-btn {
@@ -332,22 +391,6 @@ section{
     }
 }
 
-
-.title{
-    display: flex;
-    justify-content: center;
-    color: #15358b;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .card {
     background-color: #ffffff;
@@ -412,6 +455,7 @@ section{
 
 
 /* projects page CSS start */
+/* Common styles for both mobile and PC screens */
 .slide-show {
     margin: 0;
     padding: 0;
@@ -419,20 +463,21 @@ section{
     justify-content: center;
     align-items: center;
     background: #f5f0f0;
-    overflow: hidden; /* Prevent horizontal scroll on small screens */
+    overflow: hidden;
+    position: relative;
 }
 
 .slider {
-    width: 100%; /* Adjust the width to 100% to make it responsive */
-    max-width: 800px; /* Limit the maximum width */
-    height: auto; /* Adjust height automatically */
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slides {
-    width: 400%; /* Adjust to 400% for four slides */
     display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slides input {
@@ -440,103 +485,78 @@ section{
 }
 
 .slide {
-    width: 25%; /* Adjust to 25% for four slides */
-    transition: 2s;
+    flex: 0 0 100%;
 }
 
 .slide img {
-    width: 100%; /* Adjust image width to 100% to make it responsive */
-    height: auto; /* Adjust height automatically */
+    width: 100%;
+    height: auto;
 }
+
 /* Media query for small screens (e.g., mobile devices) */
 @media (max-width: 767px) {
     .slider {
-        max-width: 100%; /* Adjust max-width for small screens */
+        max-width: 100%;
     }
 
     .slide {
-        width: 100%; /* Adjust slide width for one slide at a time on small screens */
+        flex: 0 0 100%;
+    }
+
+    .manual-btn,
+    .navigation-auto {
+        display: none;
     }
 }
 
-.navigation-manual{
+/* Navigation styles */
+.navigation-manual, .navigation-auto {
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
 }
 
-
-.manual-btn{
+.manual-btn, .navigation-auto div {
+    display: inline-block;
     border: 2px solid #3a6cf4;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-
+    margin: 0 10px;
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-
-}
-
-.manual-btn:hover{
+.manual-btn:hover, .navigation-auto div:hover {
     background: #3a6cf4;
 }
 
-#radio1:checked ~ .first{
+/* Radio button checked styles */
+.slides input:checked ~ .slide {
+    opacity: 0.5;
+}
+
+.slides input:checked ~ .slide:first-child {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
-    margin-left: -20%;
+.slides input:checked ~ .slide:nth-child(2) {
+    margin-left: -100%;
 }
 
-#radio3:checked ~ .first{
-    margin-left: -40%;
+.slides input:checked ~ .slide:nth-child(3) {
+    margin-left: -200%;
 }
 
-#radio4:checked ~ .first{
-    margin-left: -60%;
+.slides input:checked ~ .slide:nth-child(4) {
+    margin-left: -300%;
 }
 
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 200px;
-}
-
-.navigation-auto div{
-border: 2px solid #3a6cf4;
-padding: 5px;
-border-radius: 10px;
-transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
+.slides input:checked ~ .navigation-auto div {
     background: #3a6cf4;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #3a6cf4;
-}
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #3a6cf4;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #3a6cf4;
-}
 
 
 
@@ -551,31 +571,43 @@ transition: 1s;
 
 }
 
-.projects{
-    background-color: #ffffff;
-    margin-top: 30px;
+.projects {
+    padding: 20px;
 }
 
-.content-pro{
+.content-pro {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
 }
 
-.card-pro{
-    background-color: #f5f0f0;
-    border: 1px solid #f0f0f0;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: 0.7s ease;
-
+.card-pro {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    .card-pro {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-pro {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-pro {
+        width: calc(25% - 20px);
+    }
+}
 .card-pro:hover{transform: scale(1.1);
 }
 
@@ -609,16 +641,6 @@ transition: 1s;
 .more-details:hover{
     color: #3a6cf4;
 }
-@media (max-width: 767px) {
-    .col-md-6.col-lg-4 {
-        flex: 0 0 100%; /* Full width for one card per row on small screens */
-    }
-
-    .card-pro {
-        max-width: none; /* Remove the max-width constraint */
-    }
-}
-
 
 
 /* projects page CSS end */
